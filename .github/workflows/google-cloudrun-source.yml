@@ -33,8 +33,7 @@ jobs:
       
     - name: 'Submit to cloud build'
       run: |
-        cd backend
-        gcloud builds submit --tag us.gcr.io/hangout-344918/hangout-api:latest
+        gcloud builds submit --tag us-central1-docker.pkg.dev/cc-assignment3-348820/cc-containers/assignment3:latest
     - name: 'Deploy to Cloud Run'
-      run: gcloud run deploy assignment3 --image=us.gcr.io/hangout-344918/hangout-api:latest --region=us-central1 --allow-unauthenticated 
+      run: gcloud run deploy assignment3 --image=us-central1-docker.pkg.dev/cc-assignment3-348820/assignment3:latest --region=us-central1 --allow-unauthenticated 
         --port=8000
