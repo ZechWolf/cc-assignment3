@@ -1,5 +1,7 @@
 # A very simple webserver
 
+Taken from the in-class example
+
 All credit goes to the original author:
 [koind/docker-simple-webserver | Github Repo](https://github.com/koind/docker-simple-webserver)
 
